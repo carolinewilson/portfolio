@@ -11,6 +11,14 @@
   "dependencies": {
     "ejs": "^2.5.2",
     "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-flatten": "^0.3.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
     "morgan": "^1.7.0"
   }
 }

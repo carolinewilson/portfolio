@@ -10,6 +10,6 @@ app.set('views', `${__dirname}/views`);
 app.use(express.static(`${__dirname}/public`));
 app.use(morgan('dev'));
 
-app.get('/',(req,res) => res.render('index'));
+app.get('/',(req,res) => res.render(`${__dirname}/index`));
 
 app.listen(port, () => console.log(`Running on port: ${port}`));

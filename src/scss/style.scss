@@ -1,23 +1,137 @@
+@import "_variables";
+
 body {
   font-family: 'Raleway', sans-serif;
-  width: 600px;
-  margin: 0 auto;
   text-transform: uppercase;
-}
+  text-align: center;
+  color: $brand-blue;
+  margin: 0;
 
-nav {
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
     li {
+      margin: 10px auto;
       display: inline-block;
       padding: 10px 30px;
     }
   }
-}
+  a {
+    text-decoration: none;
+    color: $brand-dark-grey;
+  }
+  h2 {
+    margin-top: 100px;
+  }
+  p {
+    font-family: 'Source Code Pro', monospace;
+    text-transform: lowercase;
+  }
 
-main {
-  text-align: center;
-  margin-top: 100px;
+  header {
+    margin: -10px;
+    height: 600px;
+    background-image: url('../images/pink-geometric.jpg');
+    background-size: contain;
+    background-repeat: repeat-x;
+    z-index: 0;
+
+    nav {
+      background-color: $brand-blue;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 2;
+
+      ul {
+        margin-top: 10px;
+      }
+      a {
+        color: $brand-cream;
+      }
+    }
+
+    #card {
+      position: absolute;
+      left: 50%;
+
+      .cardMain{
+        width: 450px;
+        margin-top: 150px;
+        offset: 200px;
+        z-index: 1;
+        background-color: $brand-cream;
+        padding: 90px;
+
+        -webkit-box-shadow: 0px 0px 30px 1px rgba(72,64,87,1);
+        -moz-box-shadow: 0px 0px 30px 1px
+        rgba(72,64,87,1);
+        box-shadow: 0px 0px 30px 1px rgba(72,64,87,1);
+
+        position: relative;
+        left: -50%;
+        h1 {
+          font-size: 40px;
+        }
+        h2 {
+          margin-top: 30px;
+          color: $brand-blue;
+        }
+      }
+    }
+  }
+
+  #technology {
+    .mono {
+      border: 1px solid $brand-blue;
+      width: 300px;
+      text-align: left;
+      margin: 0 auto;
+      padding: 20px 0 20px 80px;
+      background-color: #FFF;
+      color: $brand-blue;
+    }
+  }
+
+  #projects {
+    background-color: $brand-cream;
+    margin: 100px -10px 0px;
+    padding-bottom: 100px;
+    border: 1px solid $brand-cream;
+
+    .project {
+      margin-top: 60px;
+      h3 {
+        a {
+          padding:10px;
+        }
+        a:hover {
+          color: $brand-gold;
+          background-color: $brand-blue;
+        }
+      }
+      img {
+        max-width: 500px;
+      }
+    }
+  }
+  footer {
+    background-color: $brand-blue;
+    color: $brand-cream;
+    padding: 10px 0;
+    margin: 70px -10px 0;
+  }
+  #contact {
+    width: 600px;
+    margin: 80px auto;
+    a {
+      padding:10px 20px;
+    }
+    a:hover {
+      color: $brand-cream;
+      background-color: $brand-blue;
+    }
+  }
 }

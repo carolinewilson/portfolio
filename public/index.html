@@ -3,11 +3,15 @@
 <head>
   <meta charset="utf-8">
   <title>Caroline Wilson - Full Stack Web Developer</title>
-  <link href="https://fonts.googleapis.com/css?family=Raleway|Source+Code+Pro" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?Source+Code+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
+  <div class="row">
     <nav>
       <ul>
         <li><a href="#projects">Projects</a></li>
@@ -15,49 +19,74 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <section id="card">
-      <div class="cardMain">
-        <h1>Caroline Wilson</h1>
-        <hr>
-        <h2>Full stack web  developer</h2>
+  </div>
+  <div class="row">
+    <header>
+      <div class="container">
+        <div class="cardMain">
+          <h1>Caroline Wilson</h1>
+          <h2>Full stack web  developer</h2>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="container">
+    <section id="tech">
+      <div class="row">
+        <h2>// Technologies I work with</h2>
+        <p>let tech =  <br>
+          { front-end: {
+            HTML5,
+            CSS3 (SCSS),
+            Responsive HTML,
+            Javascript,
+            jQuery,
+            AngularJS
+          },<br>{
+            back-end: {
+              Object Oriented,
+              Node.JS,
+              MVC Frameworks,
+              RESTful APIs
+            }
+          };
+        </p>
       </div>
     </section>
-  </header>
-  <section id="technology">
-    <h2>// Technologies I work with</h2>
-    <div class="mono">
-      <p>let tech = { <br>
-        &nbsp;&nbsp;front-end: { <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;HTML5, <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;CSS3 (SCSS), <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;Responsive HTML, <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;Javascript, <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;jQuery, <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;AngularJS <br>
-          &nbsp;&nbsp;},{<br>
-            &nbsp;&nbsp;back-end: {<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;Object Oriented, <br>
-              &nbsp;&nbsp;&nbsp;&nbsp;Node.JS, <br>
-              &nbsp;&nbsp;&nbsp;&nbsp;MVC Frameworks, <br>
-              &nbsp;&nbsp;&nbsp;&nbsp;RESTful APIs <br>
-              &nbsp;&nbsp;} <br>
-            };
-          </p>
-        </div>
-      </section>
-      <section id="projects">
+    <section id="projects">
+      <div class="row">
         <h2>// Some projects I've been working on</h2>
-        <section class="project">
+      </div>
+      <div class="row project">
+        <div class="one-half column">
           <h3><a href="https://gem-match.herokuapp.com/">Gem Match</a></h3><p>
             "An addictive gem-matching puzzle game"
           </p>
+          <p>
+            <a href="https://github.com/carolinewilson/gem-match-game">View on GitHub</a>
+          </p>
+        </div>
+        <div class="one-half column">
           <a href="https://gem-match.herokuapp.com/"><img src="../images/gem-match.jpeg"></a>
-        </section>
-      </section>
-      <section id="contact">
+        </div>
+      </div>
+      <div class="row project">
+        <div class="one-half column">
+          <a href="https://in-the-middle.herokuapp.com"><img src="../images/meet-in-the-middle.png"></a>
+          <p>
+            <a href="https://github.com/carolinewilson/gem-match-game">View on GitHub</a>
+          </p>
+        </div>
+        <div class="one-half column"><h3><a href="https://in-the-middle.herokuapp.com">[ meet ] in the middle</a></h3><p>
+          "( Eat || Drink || Gym ) What ever you're up to, meet your friends in the middle."
+        </p>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="row">
         <h2>Say hello</h2>
         <p>
-          "I'm currently based in London and am always on the look out for innovative companies that push the envelope on thier mission to make an impact."
+          "I'm currently based in London and on the look out for innovative companies that push the envelope on thier mission to make an impact."
         </p>
         <ul>
           <li>
@@ -71,10 +100,14 @@
           </li>
         </ul>
       </section>
-      <footer>
-        <p>
-          &copy; Caroline Wilson 2016
-        </p>
-      </footer>
-    </body>
-    </html>
+    </div>
+  </div>
+  <footer>
+    <div class="row">
+      <p>
+        &copy; Caroline Wilson 2016
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

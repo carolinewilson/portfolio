@@ -16,7 +16,7 @@ body {
 
   nav {
     text-transform: uppercase;
-    height: 50px;
+    height: 60px;
     position: fixed;
     top: 0;
     right: 0;
@@ -31,6 +31,9 @@ body {
 
     a {
       color: $brand-cream;
+    }
+    ul {
+      transform: translateY(15%);
     }
   }
 
@@ -73,7 +76,7 @@ body {
   }
 
   #projects {
-    background-color: $brand-gold;
+    background-color: $brand-cream;
     padding: 50px 20px;
     margin-top: 50px;
 

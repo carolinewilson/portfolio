@@ -11,12 +11,12 @@ const src  = 'src';
 const dist = 'public';
 
 gulp.task('es6', () => {
-	return gulp.src(`${src}/**/*.js`)
-		.pipe(plumber())
-		.pipe(babel({
-			presets: ['es2015']
-		}))
-		.pipe(gulp.dest('public'));
+  return gulp.src(`${src}/**/*.js`)
+  .pipe(plumber())
+  .pipe(babel({
+    presets: ['es2015']
+  }))
+  .pipe(gulp.dest('public'));
 });
 
 
@@ -29,18 +29,18 @@ gulp.task('nodemon', () => {
 });
 
 gulp.task('sass', () => {
-	return gulp.src(`${src}/**/*.scss`)
-    .pipe(sass().on('error', sass.logError))
-		.pipe(cleanCSS({ compatibility: 'ie8'}))
-    .pipe(plumber())
-    .pipe(flatten())
-    .pipe(gulp.dest(`${dist}/css/`))
-    .pipe(livereload());
+  return gulp.src(`${src}/**/*.scss`)
+  .pipe(sass().on('error', sass.logError))
+  .pipe(cleanCSS({ compatibility: 'ie8'}))
+  .pipe(plumber())
+  .pipe(flatten())
+  .pipe(gulp.dest(`${dist}/css/`))
+  .pipe(livereload());
 });
 
 gulp.task('watch', () => {
-	livereload.listen();
-	gulp.watch(`${src}/**/*.scss`, ['sass']);
+  livereload.listen();
+  gulp.watch(`${src}/**/*.scss`, ['sass']);
   gulp.watch(`${src}/**/*.js`, ['es6']);
 });
 
